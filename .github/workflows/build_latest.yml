@@ -1,6 +1,9 @@
 name: Build Latest
 
-on: [push,workflow_dispatch]
+on: 
+  watch:
+        types: 
+            - started
 
 env:
   DOTNET_SDK_VERSION: '8.0.*'
